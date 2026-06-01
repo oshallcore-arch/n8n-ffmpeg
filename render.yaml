@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: n8n-ffmpeg
-    env: docker
-    plan: starter
-    region: oregon
-    buildCommand: ""
-    startCommand: ""
