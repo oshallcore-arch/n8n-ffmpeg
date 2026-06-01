@@ -5,10 +5,10 @@ RUN apt-get update && \
     apt-get install -y ffmpeg && \
     apt-get clean
 
-# Install n8n
-RUN npm install -g n8n
+# Install a stable version of n8n (latest npm versions are broken)
+RUN npm install -g n8n@1.67.3
 
-# Create n8n user folder
+# Create n8n data directory
 RUN mkdir -p /home/node/.n8n
 
 # Expose n8n port
